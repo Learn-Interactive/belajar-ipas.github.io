@@ -6,6 +6,22 @@
     <title>Belajar Interaktif</title>
      <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/style_panduan.css">
+
+    <style>
+    .videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+    </style>
 </head>
 <body>
     <div class="container">
@@ -19,15 +35,15 @@
                     <!-- Item 1 -->
                     <div class="accordion-card">
                         <div class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" aria-expanded="true"
+                            <button id="but1" class="accordion-button" type="button" aria-expanded="true"
                                 aria-controls="collapseOne" data-target="#collapseOne">
                                 Video 1
                                 <span class="accordion-arrow">▼</span>
                             </button>
                         </div>
                         <div id="collapseOne" class="accordion-collapse show" aria-labelledby="headingOne">
-                            <div class="accordion-body holds-the-iframe">
-                                <center><<iframe width="560" height="315" src="https://www.youtube.com/embed/NfmnNwWDPhM?si=X_FsZ6bspmRMBMb1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+                            <div class="accordion-body holds-the-iframe videoWrapper">
+                                <center><iframe id="video" src="https://www.youtube.com/embed/NfmnNwWDPhM?si=X_FsZ6bspmRMBMb1?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
                             </div>
                         </div>
                     </div>
@@ -35,15 +51,15 @@
                     <!-- Item 2 -->
                     <div class="accordion-card">
                         <div class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" aria-expanded="false"
+                            <button id="but2" class="accordion-button collapsed" type="button" aria-expanded="false"
                                 aria-controls="collapseTwo" data-target="#collapseTwo">
                                 Video 2
                                 <span class="accordion-arrow">▼</span>
                             </button>
                         </div>
                         <div id="collapseTwo" class="accordion-collapse" aria-labelledby="headingTwo">
-                            <div class="accordion-body holds-the-iframe">
-                                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/NfmnNwWDPhM?si=X_FsZ6bspmRMBMb1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><center>
+                            <div class="accordion-body holds-the-iframe videoWrapper">
+                                <center><iframe id="video2" src="https://www.youtube.com/embed/NfmnNwWDPhM?si=X_FsZ6bspmRMBMb1?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><center>
                             </div>
                         </div>
                     </div>
@@ -58,7 +74,6 @@
             </div>
         </div>
     </div>
-
     <script src="static/js/script_panduan.js"></script>
 </body>
 </html>
