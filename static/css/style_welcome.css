@@ -1,0 +1,36 @@
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-page {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Delay untuk elemen anak */
+.welcome-content {
+    opacity: 0;
+    animation:
+    fadeIn 1s ease-out 0.3s forwards,
+    bounce 1.5s infinite 1.3s;
+}
+
+.start-btn {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.6s forwards;
+}
+
+.floating-shapes .shape {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.9s forwards;
+}
+
+
