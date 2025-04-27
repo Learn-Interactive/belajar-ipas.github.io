@@ -6,11 +6,15 @@
     <title>Belajar Interaktif</title>
      <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/style_absen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
         <div class="content-page page-enter">
-            <header class="content-header">
+            <header class="content-header" style="background: #3F51B5">
                 <h1>📘 Absensi Pembelajaran</h1>
             </header>
 
@@ -56,7 +60,7 @@
 
             <!-- Navigation Buttons -->
             <div class="navigation-btns">
-                <a onclick="history.back()" class="nav-btn back-btn">Kembali</a>
+                <a onclick="Javascript:history.go(-1); Location.reload()" class="nav-btn back-btn">Kembali</a>
                 <a href="menu.html" class="nav-btn home-btn">Home</a>
                 <a href="materi.html" class="nav-btn next-btn">Lanjut</a>
             </div>

@@ -1,3 +1,13 @@
+function GoBackWithRefresh(event) {
+    if ('referrer' in document) {
+        window.location = document.referrer;
+        /* OR */
+        //location.replace(document.referrer);
+    } else {
+        window.history.back();
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Accordion Functionality
     const accordionButtons = document.querySelectorAll('.accordion-button');
