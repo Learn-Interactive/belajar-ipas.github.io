@@ -2,6 +2,12 @@
     background: #f39c12 !important;
 }
 
+.responsive_img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
 /* Accordion Styles */
 .accordion {
     width: 100%;
@@ -61,7 +67,7 @@
 }
 
 .accordion-collapse.show {
-    max-height: 500px;
+    max-height: 4096px;
 }
 
 .accordion-body {
